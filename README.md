@@ -30,7 +30,7 @@ To see a working example, open [index.php](index.php) on your server.
 ### Get url contents
 
 ```php
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 $html = MyCurl::getUrlContents(array("url" => "https://bloxtor.com"), "content");
 ```
@@ -38,7 +38,7 @@ $html = MyCurl::getUrlContents(array("url" => "https://bloxtor.com"), "content")
 ### Download File
 
 ```php
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 $downloaded_file_pointer = null; //optional
 $downloaded_file_info = MyCurl::downloadFile($file_url, $downloaded_file_pointer);
@@ -47,7 +47,7 @@ $downloaded_file_info = MyCurl::downloadFile($file_url, $downloaded_file_pointer
 ### Get single url header
 
 ```php
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set url single data. The only mandatory configuration is the key: "url"!
 $single_data = array(
@@ -80,7 +80,7 @@ echo $header;
 ### Get single url data - settings, header and html
 
 ```php
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set url single data. The only mandatory configuration is the key: "url"!
 $single_data = array(
@@ -127,7 +127,7 @@ echo "<pre>" . print_r($data) . "</pre>";
 ### Get data from group of urls with same configurations
 
 ```php
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set urls group data. The only mandatory configuration is the key: "urls"!
 $group_data = array(
@@ -152,7 +152,7 @@ echo "<pre>" . print_r($data) . "</pre>";
 ### Get multiple urls with different configurations
 
 ```php
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set multiple urls data. The only mandatory configuration is the key: "url" for each array item!
 $multiple_data = array(
@@ -188,7 +188,7 @@ echo "<pre>" . print_r($data) . "</pre>";
 ### Get urls asynchronously
 
 ```php
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set urls group data.
 $group_data = array(

@@ -54,7 +54,7 @@ p {margin:0 0 20px; text-align:center;}
 	<h5>Get urls content</h5>
 	<div class="code short">
 		<textarea readonly>
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 $html = MyCurl::getUrlContents(array("url" => "https://bloxtor.com"), "content");
 		</textarea>
@@ -65,7 +65,7 @@ $html = MyCurl::getUrlContents(array("url" => "https://bloxtor.com"), "content")
 	<h5>Download File</h5>
 	<div class="code short">
 		<textarea readonly>
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 $downloaded_file_pointer = null; //optional
 $downloaded_file_info = MyCurl::downloadFile($file_url, $downloaded_file_pointer);
@@ -77,7 +77,7 @@ $downloaded_file_info = MyCurl::downloadFile($file_url, $downloaded_file_pointer
 	<h5>Get single url header</h5>
 	<div class="code">
 		<textarea readonly>
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set url single data. The only mandatory configuration is the key: "url"!
 $single_data = array(
@@ -113,7 +113,7 @@ echo $header;
 	<h5>Get single url data - settings, header and html</h5>
 	<div class="code">
 		<textarea readonly>
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set url single data. The only mandatory configuration is the key: "url"!
 $single_data = array(
@@ -163,7 +163,7 @@ echo "<pre>" . print_r($data) . "</pre>";
 	<h5>Get data from group of urls with same configurations</h5>
 	<div class="code">
 		<textarea readonly>
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set urls group data. The only mandatory configuration is the key: "urls"!
 $group_data = array(
@@ -191,7 +191,7 @@ echo "<pre>" . print_r($data) . "</pre>";
 	<h5>Get multiple urls with different configurations</h5>
 	<div class="code">
 		<textarea readonly>
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set multiple urls data. The only mandatory configuration is the key: "url" for each array item!
 $multiple_data = array(
@@ -230,7 +230,7 @@ echo "<pre>" . print_r($data) . "</pre>";
 	<h5>Get urls asynchronously</h5>
 	<div class="code">
 		<textarea readonly>
-include __DIR__ . "/MyCurl.php";
+include __DIR__ . "/lib/MyCurl.php";
 
 //set urls group data.
 $group_data = array(
