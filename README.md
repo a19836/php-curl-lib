@@ -1,7 +1,7 @@
 # PHP Curl Lib
 
 > Original Repos:   
-> - PHP Curl Lib: https://github.com/a19836/phpcurllib/   
+> - PHP Curl Lib: https://github.com/a19836/php-curl-lib/   
 > - Bloxtor: https://github.com/a19836/bloxtor/
 
 ## Overview
